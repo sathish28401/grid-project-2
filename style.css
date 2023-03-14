@@ -1,0 +1,53 @@
+body{
+    /* padding: 10px; */
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #bbd6b8;
+    
+}
+
+h1{
+    width: 1200px;
+   color: #94af9f;
+    text-align: center;
+}
+h2{
+    color: #767f7e;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-left: 50px;
+}
+article img{
+    border: #f9f9f9 solid 4px;
+    border-radius: 4px;
+}
+
+article img,article p{
+    
+    width: 100%;
+    color: #5da87b;
+}
+
+.box-1{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width:900px){
+
+    
+  article{
+    grid-column: span 3;
+  }
+ 
+}
